@@ -47,6 +47,8 @@ def main():
     print("piec")
 
     print(TN)
+    TN = other_funct()
+    print(TN)
 
 
 main()
