@@ -18,7 +18,9 @@ def some_funct():
 def other_funct():
     """testing if we can change variable in function"""
     global TN  # indicates that we will be using external variable
-    print("inside other funct, TN is empty", TN)  # prints empty line again, local TN masks global
+    print(
+        "inside other funct, TN is empty", TN
+    )  # prints empty line again, local TN masks global
     TN = 88
     return TN
 
