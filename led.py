@@ -8,6 +8,7 @@ led_green = LED(8)
 led_red = LED(7)
 
 
+
 def find_device():
     """
     this function looks through different devices, and selects
@@ -26,12 +27,10 @@ def find_device():
             led_red.on()
             return None
 
-
 #    return None
 
 
-# while True:
-if find_device() == None:
+if find_device() is None:
     print("boo")
     led_red.on()
     sleep(10)
